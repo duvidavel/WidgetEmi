@@ -1,0 +1,33 @@
+{
+  "name": "widget",
+  "version": "1.0.0",
+  "main": "notion.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^3.1.2",
+    "next": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
+    "typescript": "5.8.3"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": ""
+}

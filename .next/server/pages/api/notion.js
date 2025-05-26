@@ -1,0 +1,76 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/api/notion";
+exports.ids = ["pages/api/notion"];
+exports.modules = {
+
+/***/ "@notionhq/client":
+/*!***********************************!*\
+  !*** external "@notionhq/client" ***!
+  \***********************************/
+/***/ ((module) => {
+
+module.exports = require("@notionhq/client");
+
+/***/ }),
+
+/***/ "next/dist/compiled/next-server/pages-api.runtime.dev.js":
+/*!**************************************************************************!*\
+  !*** external "next/dist/compiled/next-server/pages-api.runtime.dev.js" ***!
+  \**************************************************************************/
+/***/ ((module) => {
+
+module.exports = require("next/dist/compiled/next-server/pages-api.runtime.dev.js");
+
+/***/ }),
+
+/***/ "(api)/./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fnotion&preferredRegion=&absolutePagePath=.%2Fpages%2Fapi%2Fnotion.ts&middlewareConfigBase64=e30%3D!":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fnotion&preferredRegion=&absolutePagePath=.%2Fpages%2Fapi%2Fnotion.ts&middlewareConfigBase64=e30%3D! ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   routeModule: () => (/* binding */ routeModule)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/future/route-modules/pages-api/module.compiled */ \"(api)/./node_modules/next/dist/server/future/route-modules/pages-api/module.compiled.js\");\n/* harmony import */ var next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/future/route-kind */ \"(api)/./node_modules/next/dist/server/future/route-kind.js\");\n/* harmony import */ var next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/build/templates/helpers */ \"(api)/./node_modules/next/dist/build/templates/helpers.js\");\n/* harmony import */ var _pages_api_notion_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/api/notion.ts */ \"(api)/./pages/api/notion.ts\");\n\n\n\n// Import the userland code.\n\n// Re-export the handler (should be the default export).\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_pages_api_notion_ts__WEBPACK_IMPORTED_MODULE_3__, \"default\"));\n// Re-export config.\nconst config = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_pages_api_notion_ts__WEBPACK_IMPORTED_MODULE_3__, \"config\");\n// Create and export the route module that will be consumed.\nconst routeModule = new next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0__.PagesAPIRouteModule({\n    definition: {\n        kind: next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.PAGES_API,\n        page: \"/api/notion\",\n        pathname: \"/api/notion\",\n        // The following aren't used in production.\n        bundlePath: \"\",\n        filename: \"\"\n    },\n    userland: _pages_api_notion_ts__WEBPACK_IMPORTED_MODULE_3__\n});\n\n//# sourceMappingURL=pages-api.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LXJvdXRlLWxvYWRlci9pbmRleC5qcz9raW5kPVBBR0VTX0FQSSZwYWdlPSUyRmFwaSUyRm5vdGlvbiZwcmVmZXJyZWRSZWdpb249JmFic29sdXRlUGFnZVBhdGg9LiUyRnBhZ2VzJTJGYXBpJTJGbm90aW9uLnRzJm1pZGRsZXdhcmVDb25maWdCYXNlNjQ9ZTMwJTNEISIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFzRztBQUN2QztBQUNMO0FBQzFEO0FBQ2tEO0FBQ2xEO0FBQ0EsaUVBQWUsd0VBQUssQ0FBQyxpREFBUSxZQUFZLEVBQUM7QUFDMUM7QUFDTyxlQUFlLHdFQUFLLENBQUMsaURBQVE7QUFDcEM7QUFDTyx3QkFBd0IsZ0hBQW1CO0FBQ2xEO0FBQ0EsY0FBYyx5RUFBUztBQUN2QjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsS0FBSztBQUNMLFlBQVk7QUFDWixDQUFDOztBQUVEIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2lkZ2V0Lz9iM2JjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBhZ2VzQVBJUm91dGVNb2R1bGUgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9mdXR1cmUvcm91dGUtbW9kdWxlcy9wYWdlcy1hcGkvbW9kdWxlLmNvbXBpbGVkXCI7XG5pbXBvcnQgeyBSb3V0ZUtpbmQgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9mdXR1cmUvcm91dGUta2luZFwiO1xuaW1wb3J0IHsgaG9pc3QgfSBmcm9tIFwibmV4dC9kaXN0L2J1aWxkL3RlbXBsYXRlcy9oZWxwZXJzXCI7XG4vLyBJbXBvcnQgdGhlIHVzZXJsYW5kIGNvZGUuXG5pbXBvcnQgKiBhcyB1c2VybGFuZCBmcm9tIFwiLi9wYWdlcy9hcGkvbm90aW9uLnRzXCI7XG4vLyBSZS1leHBvcnQgdGhlIGhhbmRsZXIgKHNob3VsZCBiZSB0aGUgZGVmYXVsdCBleHBvcnQpLlxuZXhwb3J0IGRlZmF1bHQgaG9pc3QodXNlcmxhbmQsIFwiZGVmYXVsdFwiKTtcbi8vIFJlLWV4cG9ydCBjb25maWcuXG5leHBvcnQgY29uc3QgY29uZmlnID0gaG9pc3QodXNlcmxhbmQsIFwiY29uZmlnXCIpO1xuLy8gQ3JlYXRlIGFuZCBleHBvcnQgdGhlIHJvdXRlIG1vZHVsZSB0aGF0IHdpbGwgYmUgY29uc3VtZWQuXG5leHBvcnQgY29uc3Qgcm91dGVNb2R1bGUgPSBuZXcgUGFnZXNBUElSb3V0ZU1vZHVsZSh7XG4gICAgZGVmaW5pdGlvbjoge1xuICAgICAgICBraW5kOiBSb3V0ZUtpbmQuUEFHRVNfQVBJLFxuICAgICAgICBwYWdlOiBcIi9hcGkvbm90aW9uXCIsXG4gICAgICAgIHBhdGhuYW1lOiBcIi9hcGkvbm90aW9uXCIsXG4gICAgICAgIC8vIFRoZSBmb2xsb3dpbmcgYXJlbid0IHVzZWQgaW4gcHJvZHVjdGlvbi5cbiAgICAgICAgYnVuZGxlUGF0aDogXCJcIixcbiAgICAgICAgZmlsZW5hbWU6IFwiXCJcbiAgICB9LFxuICAgIHVzZXJsYW5kXG59KTtcblxuLy8jIHNvdXJjZU1hcHBpbmdVUkw9cGFnZXMtYXBpLmpzLm1hcCJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fnotion&preferredRegion=&absolutePagePath=.%2Fpages%2Fapi%2Fnotion.ts&middlewareConfigBase64=e30%3D!\n");
+
+/***/ }),
+
+/***/ "(api)/./lib/notion.ts":
+/*!***********************!*\
+  !*** ./lib/notion.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _notionhq_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @notionhq/client */ \"@notionhq/client\");\n/* harmony import */ var _notionhq_client__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_notionhq_client__WEBPACK_IMPORTED_MODULE_0__);\n\nconst notion = new _notionhq_client__WEBPACK_IMPORTED_MODULE_0__.Client({\n    auth: process.env.NOTION_API_KEY\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (notion);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9saWIvbm90aW9uLnRzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUEwQztBQUUxQyxNQUFNQyxTQUFTLElBQUlELG9EQUFNQSxDQUFDO0lBQUVFLE1BQU1DLFFBQVFDLEdBQUcsQ0FBQ0MsY0FBYztBQUFDO0FBRTdELGlFQUFlSixNQUFNQSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2lkZ2V0Ly4vbGliL25vdGlvbi50cz8wMzRiIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENsaWVudCB9IGZyb20gJ0Bub3Rpb25ocS9jbGllbnQnO1xuXG5jb25zdCBub3Rpb24gPSBuZXcgQ2xpZW50KHsgYXV0aDogcHJvY2Vzcy5lbnYuTk9USU9OX0FQSV9LRVkgfSk7XG5cbmV4cG9ydCBkZWZhdWx0IG5vdGlvbjtcbiJdLCJuYW1lcyI6WyJDbGllbnQiLCJub3Rpb24iLCJhdXRoIiwicHJvY2VzcyIsImVudiIsIk5PVElPTl9BUElfS0VZIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./lib/notion.ts\n");
+
+/***/ }),
+
+/***/ "(api)/./pages/api/notion.ts":
+/*!*****************************!*\
+  !*** ./pages/api/notion.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\n/* harmony import */ var _lib_notion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/lib/notion */ \"(api)/./lib/notion.ts\");\n\nasync function handler(req, res) {\n    const databaseId = process.env.NOTION_DATABASE_ID;\n    const response = await _lib_notion__WEBPACK_IMPORTED_MODULE_0__[\"default\"].databases.query({\n        database_id: databaseId\n    });\n    const items = response.results.map((page)=>{\n        const mediaProp = page.properties[\"Media\"];\n        const dateProp = page.properties[\"Data\"];\n        // Verifica se ambos existem\n        if (!mediaProp || !dateProp) return null;\n        // 🖼️ Pega todas as imagens\n        let mediaUrls = [];\n        if (mediaProp.type === \"files\") {\n            mediaUrls = mediaProp.files.filter((file)=>file.file?.url).map((file)=>file.file.url);\n        } else if (mediaProp.type === \"url\" && mediaProp.url) {\n            mediaUrls = [\n                mediaProp.url\n            ];\n        }\n        // 📅 Formata a data\n        let dateString = \"\";\n        if (dateProp.type === \"date\" && dateProp.date?.start) {\n            const date = new Date(dateProp.date.start);\n            dateString = date.toLocaleDateString(\"pt-BR\"); // Formato 20/05/2025\n        }\n        return {\n            date: dateString,\n            media: mediaUrls\n        };\n    });\n    // Remove nulos e responde\n    res.status(200).json(items.filter(Boolean));\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvbm90aW9uLnRzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQ2tDO0FBRW5CLGVBQWVDLFFBQVFDLEdBQW1CLEVBQUVDLEdBQW9CO0lBQzdFLE1BQU1DLGFBQWFDLFFBQVFDLEdBQUcsQ0FBQ0Msa0JBQWtCO0lBQ2pELE1BQU1DLFdBQVcsTUFBTVIsNkRBQWdCLENBQUNVLEtBQUssQ0FBQztRQUFFQyxhQUFhUDtJQUFXO0lBRXhFLE1BQU1RLFFBQVFKLFNBQVNLLE9BQU8sQ0FBQ0MsR0FBRyxDQUFDLENBQUNDO1FBQ2xDLE1BQU1DLFlBQVlELEtBQUtFLFVBQVUsQ0FBQyxRQUFRO1FBQzFDLE1BQU1DLFdBQVdILEtBQUtFLFVBQVUsQ0FBQyxPQUFPO1FBRXhDLDRCQUE0QjtRQUM1QixJQUFJLENBQUNELGFBQWEsQ0FBQ0UsVUFBVSxPQUFPO1FBRXBDLDRCQUE0QjtRQUM1QixJQUFJQyxZQUFzQixFQUFFO1FBRTVCLElBQUlILFVBQVVJLElBQUksS0FBSyxTQUFTO1lBQzlCRCxZQUFZSCxVQUFVSyxLQUFLLENBQ3hCQyxNQUFNLENBQUMsQ0FBQ0MsT0FBY0EsS0FBS0EsSUFBSSxFQUFFQyxLQUNqQ1YsR0FBRyxDQUFDLENBQUNTLE9BQWNBLEtBQUtBLElBQUksQ0FBQ0MsR0FBRztRQUNyQyxPQUFPLElBQUlSLFVBQVVJLElBQUksS0FBSyxTQUFTSixVQUFVUSxHQUFHLEVBQUU7WUFDcERMLFlBQVk7Z0JBQUNILFVBQVVRLEdBQUc7YUFBQztRQUM3QjtRQUVBLG9CQUFvQjtRQUNwQixJQUFJQyxhQUFhO1FBQ2pCLElBQUlQLFNBQVNFLElBQUksS0FBSyxVQUFVRixTQUFTUSxJQUFJLEVBQUVDLE9BQU87WUFDcEQsTUFBTUQsT0FBTyxJQUFJRSxLQUFLVixTQUFTUSxJQUFJLENBQUNDLEtBQUs7WUFDekNGLGFBQWFDLEtBQUtHLGtCQUFrQixDQUFDLFVBQVUscUJBQXFCO1FBQ3RFO1FBRUEsT0FBTztZQUNMSCxNQUFNRDtZQUNOSyxPQUFPWDtRQUNUO0lBQ0Y7SUFFQSwwQkFBMEI7SUFDMUJoQixJQUFJNEIsTUFBTSxDQUFDLEtBQUtDLElBQUksQ0FBQ3BCLE1BQU1VLE1BQU0sQ0FBQ1c7QUFDcEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93aWRnZXQvLi9wYWdlcy9hcGkvbm90aW9uLnRzP2EwYTIiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHR5cGUgeyBOZXh0QXBpUmVxdWVzdCwgTmV4dEFwaVJlc3BvbnNlIH0gZnJvbSAnbmV4dCc7XG5pbXBvcnQgbm90aW9uIGZyb20gJ0AvbGliL25vdGlvbic7XG5cbmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIGhhbmRsZXIocmVxOiBOZXh0QXBpUmVxdWVzdCwgcmVzOiBOZXh0QXBpUmVzcG9uc2UpIHtcbiAgY29uc3QgZGF0YWJhc2VJZCA9IHByb2Nlc3MuZW52Lk5PVElPTl9EQVRBQkFTRV9JRCE7XG4gIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgbm90aW9uLmRhdGFiYXNlcy5xdWVyeSh7IGRhdGFiYXNlX2lkOiBkYXRhYmFzZUlkIH0pO1xuXG4gIGNvbnN0IGl0ZW1zID0gcmVzcG9uc2UucmVzdWx0cy5tYXAoKHBhZ2U6IGFueSkgPT4ge1xuICAgIGNvbnN0IG1lZGlhUHJvcCA9IHBhZ2UucHJvcGVydGllc1tcIk1lZGlhXCJdO1xuICAgIGNvbnN0IGRhdGVQcm9wID0gcGFnZS5wcm9wZXJ0aWVzW1wiRGF0YVwiXTtcblxuICAgIC8vIFZlcmlmaWNhIHNlIGFtYm9zIGV4aXN0ZW1cbiAgICBpZiAoIW1lZGlhUHJvcCB8fCAhZGF0ZVByb3ApIHJldHVybiBudWxsO1xuXG4gICAgLy8g8J+WvO+4jyBQZWdhIHRvZGFzIGFzIGltYWdlbnNcbiAgICBsZXQgbWVkaWFVcmxzOiBzdHJpbmdbXSA9IFtdO1xuXG4gICAgaWYgKG1lZGlhUHJvcC50eXBlID09PSBcImZpbGVzXCIpIHtcbiAgICAgIG1lZGlhVXJscyA9IG1lZGlhUHJvcC5maWxlc1xuICAgICAgICAuZmlsdGVyKChmaWxlOiBhbnkpID0+IGZpbGUuZmlsZT8udXJsKVxuICAgICAgICAubWFwKChmaWxlOiBhbnkpID0+IGZpbGUuZmlsZS51cmwpO1xuICAgIH0gZWxzZSBpZiAobWVkaWFQcm9wLnR5cGUgPT09IFwidXJsXCIgJiYgbWVkaWFQcm9wLnVybCkge1xuICAgICAgbWVkaWFVcmxzID0gW21lZGlhUHJvcC51cmxdO1xuICAgIH1cblxuICAgIC8vIPCfk4UgRm9ybWF0YSBhIGRhdGFcbiAgICBsZXQgZGF0ZVN0cmluZyA9ICcnO1xuICAgIGlmIChkYXRlUHJvcC50eXBlID09PSBcImRhdGVcIiAmJiBkYXRlUHJvcC5kYXRlPy5zdGFydCkge1xuICAgICAgY29uc3QgZGF0ZSA9IG5ldyBEYXRlKGRhdGVQcm9wLmRhdGUuc3RhcnQpO1xuICAgICAgZGF0ZVN0cmluZyA9IGRhdGUudG9Mb2NhbGVEYXRlU3RyaW5nKFwicHQtQlJcIik7IC8vIEZvcm1hdG8gMjAvMDUvMjAyNVxuICAgIH1cblxuICAgIHJldHVybiB7XG4gICAgICBkYXRlOiBkYXRlU3RyaW5nLFxuICAgICAgbWVkaWE6IG1lZGlhVXJscyxcbiAgICB9O1xuICB9KTtcblxuICAvLyBSZW1vdmUgbnVsb3MgZSByZXNwb25kZVxuICByZXMuc3RhdHVzKDIwMCkuanNvbihpdGVtcy5maWx0ZXIoQm9vbGVhbikpO1xufVxuIl0sIm5hbWVzIjpbIm5vdGlvbiIsImhhbmRsZXIiLCJyZXEiLCJyZXMiLCJkYXRhYmFzZUlkIiwicHJvY2VzcyIsImVudiIsIk5PVElPTl9EQVRBQkFTRV9JRCIsInJlc3BvbnNlIiwiZGF0YWJhc2VzIiwicXVlcnkiLCJkYXRhYmFzZV9pZCIsIml0ZW1zIiwicmVzdWx0cyIsIm1hcCIsInBhZ2UiLCJtZWRpYVByb3AiLCJwcm9wZXJ0aWVzIiwiZGF0ZVByb3AiLCJtZWRpYVVybHMiLCJ0eXBlIiwiZmlsZXMiLCJmaWx0ZXIiLCJmaWxlIiwidXJsIiwiZGF0ZVN0cmluZyIsImRhdGUiLCJzdGFydCIsIkRhdGUiLCJ0b0xvY2FsZURhdGVTdHJpbmciLCJtZWRpYSIsInN0YXR1cyIsImpzb24iLCJCb29sZWFuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/notion.ts\n");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-api-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next"], () => (__webpack_exec__("(api)/./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fnotion&preferredRegion=&absolutePagePath=.%2Fpages%2Fapi%2Fnotion.ts&middlewareConfigBase64=e30%3D!")));
+module.exports = __webpack_exports__;
+
+})();
