@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import PostMediaViewer from '../components/ImageGallery'; // Importando o componente refatorado
+import PostMediaViewer from '../components/ImageGallery'; // Mantendo o nome do componente de mídia
 
 // Definindo o tipo para os itens que vêm da API
 type ProcessedItem = {
@@ -77,57 +77,45 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Meu Feed</title>
-        <meta name="description" content="Feed de posts do Notion" />
+        <title>Meu Feed em Grade</title>
+        <meta name="description" content="Feed de posts do Notion em grade" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Container principal da página com Tailwind */}
-      <main className="min-h-screen bg-gray-50 py-8">
+      <main className="min-h-screen bg-gray-100 py-8">
         <div className="container mx-auto px-4">
-          {/* <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">Feed</h1> */}
+          <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">Galeria de Itens</h1>
           
-          {/* Container do Feed */}
-          <div className="max-w-xl mx-auto space-y-8"> {/* Ajustado para um feed de coluna única */}
+          {/* Container do Feed em Grade */}
+          {/*
+            Tailwind CSS Grid:
+            - `grid`: Ativa o layout de grade.
+            - `grid-cols-1`: Padrão para uma coluna em telas pequenas (mobile-first).
+            - `sm:grid-cols-2`: Em telas pequenas (sm) e acima, usa 2 colunas.
+            - `md:grid-cols-3`: Em telas médias (md) e acima, usa 3 colunas (máximo de 3 itens por linha visual).
+            - `gap-6` ou `gap-8`: Espaçamento entre os itens da grade.
+          */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {items.map((item) => (
-              // Card do Post
-              <article key={item.id} className="bg-white border border-gray-300 rounded-lg shadow-sm">
-                {/* Cabeçalho do Post (Nome do item/usuário) */}
-                <header className="p-4 border-b border-gray-200">
-                  {item.name && <h2 className="text-sm font-semibold text-gray-800">{item.name}</h2>}
-                  {/* Poderia adicionar avatar e timestamp aqui se tivesse esses dados */}
-                </header>
-
-                {/* Mídia do Post */}
+              // Card do Post na Grade
+              <article key={item.id} className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden flex flex-col">
+                {/* Mídia do Post (geralmente no topo para cards de grade) */}
                 {item.media && item.media.length > 0 && (
-                  <div className="media-container"> {/* Sem classes de aspect ratio por padrão, a imagem ditará */}
+                  <div className="media-container w-full aspect-square"> {/* aspect-square para manter proporção quadrada, ajuste conforme necessário */}
                     <PostMediaViewer media={item.media} />
                   </div>
                 )}
 
-                {/* Corpo do Post (Interações, Legenda, Data) */}
-                <section className="p-4 space-y-2">
-                  {/* Ícones de Interação (Placeholder) */}
-                  {/* <div className="flex space-x-4 mb-2">
-                    <button aria-label="Curtir" className="text-gray-700 hover:text-red-500">...</button>
-                    <button aria-label="Comentar" className="text-gray-700 hover:text-blue-500">...</button>
-                    <button aria-label="Compartilhar" className="text-gray-700 hover:text-green-500">...</button>
+                {/* Conteúdo do Card (Nome, Data, Descrição) */}
+                <div className="p-4 flex-grow flex flex-col justify-between">
+                  <div>
+                    {item.name && <h2 className="text-lg font-semibold text-gray-800 mb-1 truncate">{item.name}</h2>}
+                    {item.description && (
+                      <p className="text-sm text-gray-600 mb-2 line-clamp-3">{item.description}</p> // line-clamp para limitar linhas de descrição
+                    )}
                   </div>
-                  */}
-                  
-                  {/* Legenda/Descrição */}
-                  {item.description && (
-                    <p className="text-sm text-gray-800">
-                      {/* Se o nome for o "autor" da legenda:
-                      {item.name && <span className="font-semibold">{item.name}</span>}{' '}
-                      */}
-                      {item.description}
-                    </p>
-                  )}
-
-                  {/* Data do Post */}
-                  {item.date && <p className="text-xs text-gray-500 uppercase tracking-wide">{item.date}</p>}
-                </section>
+                  {item.date && <p className="text-xs text-gray-500 mt-2 self-start">{item.date}</p>}
+                </div>
               </article>
             ))}
           </div>

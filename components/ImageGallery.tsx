@@ -27,12 +27,12 @@ const PostMediaViewer: React.FC<PostMediaViewerProps> = ({ media /*, date */ }) 
 
   return (
     // Container da galeria para um post
-    <div className="relative group w-full bg-gray-200"> {/* Adicionado bg-gray-200 para placeholder visual */}
+    <div className="relative group w-full h-full bg-gray-200"> {/* Adicionado h-full para que a imagem possa usar h-full */}
       <img
         src={media[current]}
         alt={`Imagem ${current + 1} de ${media.length}`}
-        // Ajuste de classes para uma imagem de post de feed (responsiva, pode ter altura máxima)
-        className="w-full h-auto max-h-[70vh] object-contain md:object-cover" // object-contain para ver toda imagem, object-cover para preencher
+        // MODIFICADO AQUI para preencher melhor um container de grade com aspect ratio
+        className="w-full h-full object-cover" 
       />
 
       {media.length > 1 && (
@@ -91,4 +91,4 @@ const PostMediaViewer: React.FC<PostMediaViewerProps> = ({ media /*, date */ }) 
   );
 };
 
-export default PostMediaViewer; // Exportando com um nome que reflete sua função no post
+export default PostMediaViewer;
